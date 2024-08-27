@@ -25,9 +25,9 @@ props: {
 <template>
     <div class="card" style="width: 18rem; border: solid 1px; margin: 1px;">
         <div class="card-body" style="background-color: #242424; border-radius: 5%;">
-            <h5 class="card-title">{{ title }}</h5>
+            <h5 class="card-title" style="color: brown;">{{ title }}</h5>
             <div>
-                <span v-for="technology in technologies" class="badge text-bg-primary mx-1">{{ technology.name }}</span>
+                <span v-for="technology in technologies" class="badge text-bg-primary mx-1" style="padding: 2px;">{{ technology.name }}</span>
             </div>
             <p class="card-text">{{ description }}</p>
         </div>

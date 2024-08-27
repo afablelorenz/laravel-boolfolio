@@ -36,7 +36,7 @@ created(){
 
 <template>
 
-    <ProjectCard v-for="project in projects" :title="project.title" :description="project.description" :finished="project.finished" :technologies="project.technologies" />
+    <ProjectCard v-for="project in projects" :title="project.title" :description="project.description" :technologies="project.technologies" />
 </template>
 
 <style scoped>
