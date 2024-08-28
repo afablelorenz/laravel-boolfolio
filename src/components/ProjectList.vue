@@ -36,7 +36,9 @@ created(){
 
 <template>
 
-    <ProjectCard v-for="project in projects" :title="project.title" :description="project.description" :technologies="project.technologies" />
+<router-link v-for="project in projects" :to="{name: 'single-project', params: { id: project.id}}" class="text-decoration-none">
+        <ProjectCard  :title="project.title" :description="project.description" :technologies="project.technologies"/>
+    </router-link>
 </template>
 
 <style scoped>

@@ -1,4 +1,5 @@
 <script setup>
+import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 </script>
 
@@ -8,7 +9,7 @@ import AppMain from './components/AppMain.vue';
   </header>
 
   <main>
-    <AppMain/>
+    <router-view></router-view>
   </main>
 
   <footer>
